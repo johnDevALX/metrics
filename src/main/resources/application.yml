@@ -1,0 +1,22 @@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+spring:
+  application:
+    name: demo_app
+
+info:
+  app:
+    name: ${spring.application.name}
+    links:
+      youtube: https://www.youtube.com
